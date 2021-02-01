@@ -12,7 +12,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route('/predict1',methods=['POST','GET'])
+@app.route('/predict',methods=['POST','GET'])
 def predict():
     # receive the values send by user in three text boxes thru request object -> requesst.form.values()
     
